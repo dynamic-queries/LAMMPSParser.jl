@@ -1,0 +1,13 @@
+name = "LAMMPSParser"
+uuid = "001fdd5c-e233-4521-89d6-fee4cb5ab9f1"
+authors = ["Rahul Manavalan <rahul.learns.physics@gmail.com> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
