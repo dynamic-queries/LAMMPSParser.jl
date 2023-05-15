@@ -1,5 +1,6 @@
 module LAMMPSParser
 
-# Write your package code here.
-
+    include("parser.jl")
+    export Parser
+    export get_velocities, get_positions, get_forces
 end
