@@ -8,7 +8,7 @@ mutable struct Parser
     function Parser(filename::String)
         lines = readlines(filename)
         natoms = parse(Int,lines[4])
-        ntsteps = Int(length(lines)/29)
+        ntsteps = Int(length(lines)/(natoms+9))
         field_names = split(lines[9][21:end])
         field_vals = Dict([field_names[i]=>zeros(natoms,ntsteps) for i=1:length(field_names)]...)
         
